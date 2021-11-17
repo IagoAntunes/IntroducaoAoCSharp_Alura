@@ -15,10 +15,11 @@ namespace _10_CalculaPoupanca
             double valorInvestido = 1000;
             int contadorMes = 1;
             while(contadorMes <= 12)
-            {
+            {//teste
                 valorInvestido = valorInvestido + valorInvestido * 0.0036;
                 Console.WriteLine("Após "+contadorMes+" mes, você tera R$" + valorInvestido);
                 contadorMes++;
+                Console.WriteLine("Testeee");
             }
             
 
