@@ -10,6 +10,19 @@ namespace _04_ByteBank
     {
         static void Main(string[] args)
         {
+            ContaCorrente contaDoBruno = new ContaCorrente();
+
+            contaDoBruno.titular = "Bruno";
+
+            Console.WriteLine(contaDoBruno.saldo);
+            bool resutadoSaque = contaDoBruno.Sacar(500);
+            Console.WriteLine(contaDoBruno.saldo);
+            Console.WriteLine(resutadoSaque);
+
+            contaDoBruno.Depositar(500);
+            Console.WriteLine(contaDoBruno.saldo);
+
+            Console.ReadLine();
         }
     }
 }
