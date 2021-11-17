@@ -10,6 +10,13 @@ namespace _01_ByteBank
     {
         static void Main(string[] args)
         {
+            new ContaCorrente();
+
+            //Oque é uma classe
+            //Como criar uma classe
+            //Como criar um objeto ou instancia de uma classe
+
+            Console.ReadLine();
         }
     }
 }

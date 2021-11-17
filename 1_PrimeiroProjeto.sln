@@ -33,6 +33,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp parte1 Primeiros pas
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp parte2 Introducao a POO", "CSharp parte2 Introducao a POO", "{B883FD22-E4CE-43C3-B457-D3F5DEC91A72}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_ByteBank", "01_ByteBank\01_ByteBank.csproj", "{6CE345E3-BC3D-4FAE-9122-7A06F354A0A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +93,10 @@ Global
 		{18E78D40-C4C6-4795-A08B-194B58BF3830}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18E78D40-C4C6-4795-A08B-194B58BF3830}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18E78D40-C4C6-4795-A08B-194B58BF3830}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CE345E3-BC3D-4FAE-9122-7A06F354A0A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CE345E3-BC3D-4FAE-9122-7A06F354A0A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CE345E3-BC3D-4FAE-9122-7A06F354A0A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CE345E3-BC3D-4FAE-9122-7A06F354A0A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -109,6 +115,7 @@ Global
 		{ADC2AE88-D9F9-4E49-9E94-7666E2C8726C} = {4629BA7A-0E17-427E-8EA5-B86169DAAC25}
 		{9235FEB7-25D6-431B-ABA5-260E737C0112} = {4629BA7A-0E17-427E-8EA5-B86169DAAC25}
 		{18E78D40-C4C6-4795-A08B-194B58BF3830} = {4629BA7A-0E17-427E-8EA5-B86169DAAC25}
+		{6CE345E3-BC3D-4FAE-9122-7A06F354A0A0} = {B883FD22-E4CE-43C3-B457-D3F5DEC91A72}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E0B0830-FC49-4C69-9CB5-F3EBE4E7E3CD}
