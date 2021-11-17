@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _06_AtribuicoesDeVariaveis
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Executando o projeto 6");
+
+            int idade = 32;
+            int idadeGustavo = idade;
+
+            idade = 20;
+
+            Console.WriteLine(idade);
+            Console.WriteLine(idadeGustavo);
+
+            Console.ReadLine();
+            //O conceito e como declarar char e String
+            //Como concatenar sTRINGS
+            //Variaveis guardam valores e nao referencias
+        }
+    }
+}
