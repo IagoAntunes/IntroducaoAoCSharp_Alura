@@ -1,4 +1,5 @@
 ﻿using ByteBank.Funcionarios;
+using ByteBank.Sistemas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,11 +12,26 @@ namespace ByteBank
     {
         static void Main(string[] args)
         {
-            CalcularBonificacao();
+            //CalcularBonificacao();
 
-
+            UsarSistema();
 
             Console.ReadLine();
+        }
+        public static void UsarSistema()
+        {
+            SistemaInterno sistemaInterno = new SistemaInterno();
+
+            Diretor roberta = new Diretor("159.753.398-04");
+            roberta.Nome = "Roberta";
+            roberta.Senha = "123";
+
+            GerenteDeConta camila = new GerenteDeConta("326.985.628-89");
+            camila.Nome = "Camila";
+            camila.Senha = "abc";
+
+            sistemaInterno.Logar(roberta, "123");
+            sistemaInterno.Logar(camila, "abc");
         }
 
         public static void CalcularBonificacao()
@@ -71,4 +87,8 @@ namespace ByteBank
  * Preenchendo construtores da classe base a partir da classe derivada
  * com a sintaxe public Diretor(string cpf) : base(5000,cpf)
  * Classes e metodos abstreatos
+ */
+
+/*Trabalhamos mais a fundo com herança
+ * Trabalhamos mais a fundo com abstrações
  */
