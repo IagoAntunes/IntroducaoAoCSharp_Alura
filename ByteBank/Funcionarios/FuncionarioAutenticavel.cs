@@ -13,7 +13,6 @@ namespace ByteBank.Funcionarios
         public FuncionarioAutenticavel(double salario, string cpf)
             : base(salario, cpf)
         {
-
         }
 
         public bool Autenticar(string senha)
