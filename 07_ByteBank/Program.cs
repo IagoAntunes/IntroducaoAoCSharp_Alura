@@ -30,3 +30,9 @@ namespace _07_ByteBank
         }
     }
 }
+/*
+ * Construtor da class,possibilitando recebr argumentos e inicializar atributos a partir da criação de um7
+ * objeto:* com isso a inicialização dos atributos recebidos no construtor torna-se obrigatório
+ * atribots da classe , os atributos estáticos
+ * metodos da classe , os métodos estáticos
+ * ausencia de referência do this dentro dos metodos estaticos*/
