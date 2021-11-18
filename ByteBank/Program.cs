@@ -13,15 +13,23 @@ namespace ByteBank
         {
             GerenciadorBonificacao gerenciador = new GerenciadorBonificacao();
 
-            Funcionario carlos = new Funcionario();
+            Funcionario carlos = new Funcionario("546.879.157-20");
             carlos.Nome = "Carlos";
-            carlos.CPF = "546.879.157-20";
             carlos.Salario = 2000;
 
-            Diretor roberta = new Diretor();
+            Console.WriteLine(Funcionario.TotalDeFuncionarios);
+
+            //Funcionario pedro = new Diretor();
+
+            Diretor roberta = new Diretor("454.658.148-3");
             roberta.Nome = "Roberta";
-            roberta.CPF = "454.658.148-3";
             roberta.Salario = 5000;
+
+            Console.WriteLine(Funcionario.TotalDeFuncionarios);
+
+            Funcionario robertaTeste = roberta;
+            Console.WriteLine("Bonificacao de uma referencia de Diretori:" + roberta.GetBonificacao());
+            Console.WriteLine("Bonificacao de uma referencia de Funcionario:" + robertaTeste.GetBonificacao());
 
             gerenciador.Registrar(carlos);
             gerenciador.Registrar(roberta);
@@ -29,7 +37,10 @@ namespace ByteBank
             Console.WriteLine(carlos.Nome);
             Console.WriteLine(carlos.GetBonificacao());
 
-            Console.WriteLine("Total de bonificacoes:" + gerenciador.GetTotalBonificacao());
+            Console.WriteLine(roberta.Nome);
+            Console.WriteLine(roberta.GetBonificacao());
+
+            Console.WriteLine("Total de bonificacoes..." + gerenciador.GetTotalBonificacao());
 
 
             Console.ReadLine();
@@ -42,3 +53,13 @@ namespace ByteBank
  * Podemos ter varios metodos com o mesmo nme , desde que possuam lista de argumentos diferentes ,SOBRECARGAS
  aaaaaaaaaaaa
  */
+
+/*
+ * Herança - Aprendemos herança e vimos que com sua sintaxe bastante simples
+ *      ela é mportantissima em qualquer projeto
+ * Polimorfismo - Com isso foi possivel tratar objetos do tipo diretor como funcionario e evitar
+ *      repetição de codigo e varias sobrecargas iguais
+ * Modificadores v,Ov - alguns componentes possuem implementação diferentes nas classes derivaddas para
+ *      resolver este problema basta usarmos metodos virtuais e sobrescrita
+ * base - A classe filha pode fazer referencia aos membros da classe base com uso desta palavra reservada
+ * */
