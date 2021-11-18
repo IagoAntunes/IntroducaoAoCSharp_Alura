@@ -34,6 +34,10 @@ namespace ByteBank
             GerenteDeConta camila = new GerenteDeConta("326.985.628-89");
             camila.Nome = "Camila";
 
+            Desenvovledor guilherme = new Desenvovledor("123.456.789-12");
+            guilherme.Nome = "Guilherme";
+
+            gerenciadorBonificacao.Registrar(guilherme);
             gerenciadorBonificacao.Registrar(pedro);
             gerenciadorBonificacao.Registrar(roberta);
             gerenciadorBonificacao.Registrar(igor);
@@ -61,3 +65,10 @@ namespace ByteBank
  *      resolver este problema basta usarmos metodos virtuais e sobrescrita
  * base - A classe filha pode fazer referencia aos membros da classe base com uso desta palavra reservada
  * */
+
+/*
+ * O modificador de acesso protected
+ * Preenchendo construtores da classe base a partir da classe derivada
+ * com a sintaxe public Diretor(string cpf) : base(5000,cpf)
+ * Classes e metodos abstreatos
+ */

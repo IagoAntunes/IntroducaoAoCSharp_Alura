@@ -29,24 +29,14 @@ namespace ByteBank.Funcionarios
             Salario = salario;
             TotalDeFuncionarios++;
         }
+
+        public abstract void AumentarSalario();
+        public abstract double GetBonificacao();
         
-        public virtual void AumentarSalario()
-        {
-            //Salario = Salario + (Salario * 0.10);
-            //Salario = Salario * 1.1;
-            Salario *= 1.1;
-        }
-        
-        public virtual double GetBonificacao()
-         {
-             return Salario * 0.10;
-         }
         /*public Funcionario(int tipo)
         {
             this._tipo = tipo;
         }*/
-
-
         /*public double GetBonificacao()
         {
             if (_tipo == 1)
