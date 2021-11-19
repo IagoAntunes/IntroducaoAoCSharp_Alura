@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ByteBankExcecao04
 {
-    public class LeitorDeArquivos
+    public class LeitorDeArquivos : IDisposable
     {
         public string Arquivo { get; }
 
@@ -15,22 +15,22 @@ namespace ByteBankExcecao04
         {
             Arquivo = arquivo;
 
-            throw new FileNotFoundException();
+            //throw new FileNotFoundException();
 
             Console.WriteLine("Abrindo arquivo: "+arquivo);
         }
         public string LerProximaLinha()
         {
             Console.WriteLine("LendoLinha...");
-
-            //throw new IOException();//Entrada ou saida
+            
+            throw new IOException();//Entrada ou saida
 
             return "Linha do arquivo";
         }
-        public string Fechar()
+
+        public void Dispose()//Responsabilidade de lbierar os recursos
         {
             Console.WriteLine("Fechando arquivo");
-            return "Fechando arquivo";
         }
     }
 }

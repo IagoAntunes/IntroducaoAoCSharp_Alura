@@ -11,7 +11,14 @@ namespace ByteBankExcecao04
     {
         static void Main(string[] args)
         {
-            CarregarContas();
+            try
+            {
+                CarregarContas();
+            }catch (Exception ex)
+            {
+                Console.WriteLine("CATCH NO METODO MAIN");
+            }
+            
 
             Console.WriteLine("Execução realizada com sucesso");
             Console.ReadLine();
@@ -19,25 +26,32 @@ namespace ByteBankExcecao04
 
         private static void CarregarContas()
         {
-            LeitorDeArquivos leitor = null;
-            try
+
+            using(LeitorDeArquivos leitor = new LeitorDeArquivos("teste.txt"))
             {
-                leitor = new LeitorDeArquivos("contasç.txt");
+                //IDisposable - interface
                 leitor.LerProximaLinha();
-                leitor.LerProximaLinha();
-                leitor.LerProximaLinha();
-            }catch (IOException)
-            {
-                Console.WriteLine("Excecao do tipo IOExcepton capturada e tratada");
             }
-            finally
-            {
-                if(leitor != null)
-                {
-                    leitor.Fechar();
-                }
+
+            //-------------------------------------------------------
+            //LeitorDeArquivos leitor = null;
+            //try
+            //{
+            //    leitor = new LeitorDeArquivos("contasç.txt");
+
+            //    leitor.LerProximaLinha();
+            //    leitor.LerProximaLinha();
+            //    leitor.LerProximaLinha();
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("Finannly");
+            //    if(leitor != null)
+            //    {
+            //        leitor.Fechar();
+            //    }
                    
-            }
+            //}
         }
 
         private static void TestaInnerException()
@@ -93,3 +107,9 @@ namespace ByteBankExcecao04
         }
     }
 }
+/*
+ * 06
+ * O bloco finally
+ * Nao é obrigatorio o bloco catch quando temos um finally
+ * Como é usado o bloco using e como ele funciona
+ * A interface IDosposable*/
