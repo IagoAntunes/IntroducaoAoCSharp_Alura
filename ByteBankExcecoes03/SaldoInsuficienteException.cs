@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace ByteBankExcecoes03
 {
-    public class SaldoInsuficienteException : Exception
+    public class SaldoInsuficienteException : OperacaoFinanceiraException
     {
         public double Saldo { get; }
         public double ValorSaque { get; }
 
         public SaldoInsuficienteException()
         {
-
         }
         public SaldoInsuficienteException(double saldo, double valorSaque)
             : this("Tentativa de saque do valor de " + valorSaque + " com saldo de " + saldo)
@@ -27,5 +26,10 @@ namespace ByteBankExcecoes03
 
         }
 
+        public SaldoInsuficienteException(string mensagem,Exception excecaoInterna)
+            :base(mensagem, excecaoInterna)
+        {
+
+        }
     }
 }

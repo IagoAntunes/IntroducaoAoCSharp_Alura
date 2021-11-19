@@ -8,8 +8,12 @@ namespace ByteBankExcecao03
     {
         public static double TaxaOperacao { get; private set; }
 
-        public Cliente titular { get; set; }
+        public Cliente Titular { get; set; }
+        
         public static int TotalDeContasCriadas { get;private set; }//Faz parte da CLASSE
+        public int ContadorSaquesNaoPermitidos { get; private set; }
+        public int ContadorTransferenciasNaoPermitidas { get; private set; }
+        
         public int Agencia { get;}
         public int Numero { get; }
 
@@ -29,8 +33,6 @@ namespace ByteBankExcecao03
                 saldo = value;
             }
         }
-
-
         public ContaCorrente(int agencia, int numero)//Construtor
         {
             if(agencia <= 0)
@@ -55,12 +57,12 @@ namespace ByteBankExcecao03
             }
             if (saldo < valor)
             {
+                ContadorSaquesNaoPermitidos++;
                 throw new SaldoInsuficienteException(Saldo, valor);
             }
             else
             {
-                saldo -= valor;
-                
+                saldo -= valor;      
             }
         }
 
@@ -75,7 +77,16 @@ namespace ByteBankExcecao03
             {
                 throw new ArgumentException("Valor inválido para a transferencia.", nameof(valor));
             }
-            Sacar(valor);
+
+            try
+            {
+                Sacar(valor);
+            }
+            catch (SaldoInsuficienteException ex)
+            {
+                ContadorTransferenciasNaoPermitidas++;
+                throw new OperacaoFinanceiraException("Operação nao realizada",ex);
+            }
             contaDestino.Depositar(valor);
         }
     }

@@ -13,32 +13,20 @@ namespace ByteBankExcecoes03
         {
             try
             {
-                ContaCorrente conta = new ContaCorrente(456,4578420);
-                ContaCorrente conta2 = new ContaCorrente(123, 345678);
-                conta2.Transferir(-10, conta);
+                ContaCorrente conta1 = new ContaCorrente(1234, 667890);
+                ContaCorrente conta2 = new ContaCorrente(3456, 67890);
 
-                conta.Depositar(50);
-                Console.WriteLine(conta.saldo);
-                conta.Sacar(-500);
-            }
-            catch (ArgumentException ex)
+                //conta1.Transferir(10000, conta2);
+                conta1.Sacar(10000);
+            }catch (OperacaoFinanceiraException e)
             {
-                if (ex.ParamName == "numero") { }
-                Console.WriteLine("Argumento com problema:" + ex.ParamName);
-                Console.WriteLine("Ocorre uma excecao do tipo Argument");
-                Console.WriteLine(ex.Message);
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace);
+
+                Console.WriteLine("Informações da INNER");
+                Console.WriteLine(e.InnerException.Message);
+                Console.WriteLine(e.InnerException.StackTrace);
             }
-            catch(SaldoInsuficienteException ex)
-            {
-                Console.WriteLine(ex.Message);
-                Console.WriteLine("Excecao do tipo SaldoInsuficienteException");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                Console.WriteLine("QUER VE");
-            }
-            //Metodo();
 
             Console.WriteLine("Execução realizada com sucesso");
             Console.ReadLine();
@@ -80,4 +68,11 @@ namespace ByteBankExcecoes03
  * Convenções de nomeação de exceções
  * Construtores comuns de exceções
  * Como criar uma excecção mais rica.
+ */
+
+/*05
+ * As diferenças entre throw e throw ex
+ * Como a CLR preencher a propriedade StackTrace
+ * O padrao de inner exceptions
+ * O terceiro construtor que as excecoes devem ter:(string mensagem,Exception excecaoInterna)
  */
