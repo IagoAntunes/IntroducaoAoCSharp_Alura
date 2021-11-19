@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,37 @@ namespace ByteBankExcecao04
     public class Program
     {
         static void Main(string[] args)
+        {
+            CarregarContas();
+
+            Console.WriteLine("Execução realizada com sucesso");
+            Console.ReadLine();
+        }
+
+        private static void CarregarContas()
+        {
+            LeitorDeArquivos leitor = null;
+            try
+            {
+                leitor = new LeitorDeArquivos("contasç.txt");
+                leitor.LerProximaLinha();
+                leitor.LerProximaLinha();
+                leitor.LerProximaLinha();
+            }catch (IOException)
+            {
+                Console.WriteLine("Excecao do tipo IOExcepton capturada e tratada");
+            }
+            finally
+            {
+                if(leitor != null)
+                {
+                    leitor.Fechar();
+                }
+                   
+            }
+        }
+
+        private static void TestaInnerException()
         {
             try
             {
@@ -27,9 +59,6 @@ namespace ByteBankExcecao04
                 Console.WriteLine(e.InnerException.Message);
                 Console.WriteLine(e.InnerException.StackTrace);
             }
-
-            Console.WriteLine("Execução realizada com sucesso");
-            Console.ReadLine();
         }
         private static void Metodo()
         {
