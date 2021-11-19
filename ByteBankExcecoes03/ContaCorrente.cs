@@ -1,7 +1,8 @@
 ﻿
+using ByteBankExcecoes03;
 using System;
 
-namespace ByteBankExcecao02
+namespace ByteBankExcecao03
 {
     class ContaCorrente
     {
@@ -43,20 +44,23 @@ namespace ByteBankExcecao02
             Agencia = agencia;
             Numero = numero;
 
-            TaxaOperacao = 30 / TotalDeContasCriadas;
-
             TotalDeContasCriadas++;
+            TaxaOperacao = 30 / TotalDeContasCriadas;
         }
-        public bool Sacar(double valor)
+        public void Sacar(double valor)
         {
+            if(valor < 0)
+            {
+                throw new ArgumentException("Valor invalido para o SAQUE.",nameof(valor));
+            }
             if (saldo < valor)
             {
-                return false;
+                throw new SaldoInsuficienteException(Saldo, valor);
             }
             else
             {
                 saldo -= valor;
-                return true;
+                
             }
         }
 
@@ -65,15 +69,14 @@ namespace ByteBankExcecao02
             saldo += valor;
         }
 
-        public bool Transferir(double valor, ContaCorrente contaDestino)
+        public void Transferir(double valor, ContaCorrente contaDestino)
         {
-            if (this.saldo < valor)
+            if(valor < 0)
             {
-                return false;
+                throw new ArgumentException("Valor inválido para a transferencia.", nameof(valor));
             }
-            saldo -= valor;
+            Sacar(valor);
             contaDestino.Depositar(valor);
-            return true;
         }
     }
 }

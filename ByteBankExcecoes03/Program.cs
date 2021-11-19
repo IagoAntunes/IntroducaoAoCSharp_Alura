@@ -1,11 +1,11 @@
-﻿using ByteBankExcecao02;
+﻿using ByteBankExcecao03;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ByteBankExcecao02
+namespace ByteBankExcecoes03
 {
     internal class Program
     {
@@ -13,18 +13,30 @@ namespace ByteBankExcecao02
         {
             try
             {
-                ContaCorrente conta = new ContaCorrente(0,0);
+                ContaCorrente conta = new ContaCorrente(456,4578420);
+                ContaCorrente conta2 = new ContaCorrente(123, 345678);
+                conta2.Transferir(-10, conta);
+
+                conta.Depositar(50);
+                Console.WriteLine(conta.saldo);
+                conta.Sacar(-500);
             }
             catch (ArgumentException ex)
             {
-                if(ex.ParamName == "numero") { }
+                if (ex.ParamName == "numero") { }
                 Console.WriteLine("Argumento com problema:" + ex.ParamName);
                 Console.WriteLine("Ocorre uma excecao do tipo Argument");
                 Console.WriteLine(ex.Message);
             }
+            catch(SaldoInsuficienteException ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("Excecao do tipo SaldoInsuficienteException");
+            }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                Console.WriteLine("QUER VE");
             }
             //Metodo();
 
@@ -40,7 +52,8 @@ namespace ByteBankExcecao02
             try
             {
                 Dividir(10, divisor);
-            }catch(NullReferenceException ex)
+            }
+            catch (NullReferenceException ex)
             {
                 Console.WriteLine("Fui capturea pelo");
                 Console.WriteLine(ex.StackTrace);
@@ -63,3 +76,8 @@ namespace ByteBankExcecao02
         }
     }
 }
+/*04
+ * Convenções de nomeação de exceções
+ * Construtores comuns de exceções
+ * Como criar uma excecção mais rica.
+ */
