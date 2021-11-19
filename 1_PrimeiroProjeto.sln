@@ -55,6 +55,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp parte4 Entendendo Ex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBankExcecoes", "ByteBankExcecoes\ByteBankExcecoes.csproj", "{24689B79-6DAD-49EF-B6E3-18A3FE5E6F5C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBankExcecao02", "ByteBankExcecao02\ByteBankExcecao02.csproj", "{DE758224-54E0-4817-A3C7-D3C4D5720411}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -149,6 +151,10 @@ Global
 		{24689B79-6DAD-49EF-B6E3-18A3FE5E6F5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24689B79-6DAD-49EF-B6E3-18A3FE5E6F5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24689B79-6DAD-49EF-B6E3-18A3FE5E6F5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE758224-54E0-4817-A3C7-D3C4D5720411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE758224-54E0-4817-A3C7-D3C4D5720411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE758224-54E0-4817-A3C7-D3C4D5720411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE758224-54E0-4817-A3C7-D3C4D5720411}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -176,6 +182,7 @@ Global
 		{80430CB7-CDD6-489F-8484-90D6DD48F7AC} = {B883FD22-E4CE-43C3-B457-D3F5DEC91A72}
 		{3C699883-DFD8-41E8-AE29-11145418D52F} = {AB315AB4-09FD-4058-977F-5076DA5936CD}
 		{24689B79-6DAD-49EF-B6E3-18A3FE5E6F5C} = {C1AAA55F-7016-4CCD-9B11-6698682078EA}
+		{DE758224-54E0-4817-A3C7-D3C4D5720411} = {C1AAA55F-7016-4CCD-9B11-6698682078EA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E0B0830-FC49-4C69-9CB5-F3EBE4E7E3CD}

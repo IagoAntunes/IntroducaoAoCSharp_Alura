@@ -1,5 +1,7 @@
 ﻿
-namespace ByteBankExcecoes
+using System;
+
+namespace ByteBankExcecao02
 {
     class ContaCorrente
     {
@@ -7,24 +9,10 @@ namespace ByteBankExcecoes
 
         public Cliente titular { get; set; }
         public static int TotalDeContasCriadas { get;private set; }//Faz parte da CLASSE
+        public int Agencia { get;}
+        public int Numero { get; }
 
-        public int agencia;
-        public int Agencia
-        {
-            get { return agencia; }
-            set 
-            {
-                if (value <= 0)
-                {
-                    return;
-                }
-                agencia = value;
-            }
-        }
-        
-        public int numero { get; set; }
         public double saldo = 100;
-
         public double Saldo
         {
             get 
@@ -44,8 +32,16 @@ namespace ByteBankExcecoes
 
         public ContaCorrente(int agencia, int numero)//Construtor
         {
-            this.agencia = agencia;
-            this.numero = numero;
+            if(agencia <= 0)
+            {
+                string teste = nameof(agencia);//String numeroAgencia
+                throw new ArgumentException("A agencia deve ser maior que 0",nameof(agencia));
+            }if(numero <= 0)
+            {
+                throw new ArgumentException("O argumento numero deve ser maior que 0",nameof(numero));
+            }
+            Agencia = agencia;
+            Numero = numero;
 
             TaxaOperacao = 30 / TotalDeContasCriadas;
 
@@ -96,5 +92,11 @@ namespace ByteBankExcecoes
  * O bloco try pode acompanhar varios blocos catch
  * A CLR visita os blocos catch em ordem , de cima para baixo.Por esta razaão
  * os tipos de exceção mais especificos devem estar no começo
- * A instrução throw dentro de um bloc ocatch relança uma exceção
- * */
+ * A instrução throw dentro de um bloc ocatch relança uma exceção*/
+
+/*03
+ * Capos somente leitura com o modificador readonly;
+ * Propriedades somente leitura , com omissao do setter
+ * O operador nameof();
+ * A classe de exceção ArgumentException , seus construtores e propriedades
+ */
