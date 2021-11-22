@@ -12,6 +12,7 @@ namespace ByteBank.SistemaAgencia
         static void Main(string[] args)
         {
             ContaCorrente conta = new ContaCorrente(847, 123456);
+            Funcionario funcionario = null;
 
             Console.WriteLine(conta.Numero);
 
@@ -21,3 +22,10 @@ namespace ByteBank.SistemaAgencia
         }
     }
 }
+/*
+ * Como criar biblioteca de classes
+ * Como adicionar referencias de um projeto para outro
+ * A diferença entre bibliotecas de classes e aplicativo de console
+ * a extensao de arquivo .dll
+ * como o .net busca as bibliotecas na execucao de um programa
+ */
