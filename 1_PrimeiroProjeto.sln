@@ -3,31 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_PrimeiroProjeto", "1_PrimeiroProjeto\01_PrimeiroProjeto.csproj", "{3CD74398-B3CC-4283-BD37-1ACB12CE8D68}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_PrimeiroProjeto", "CSharp parte1 PrimeirosPassos\1_PrimeiroProjeto\01_PrimeiroProjeto.csproj", "{3CD74398-B3CC-4283-BD37-1ACB12CE8D68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_CriandoVariaveis", "02_CriandoVariaveis\02_CriandoVariaveis.csproj", "{E7AAE61A-3F25-4B2C-A3BA-DDAD094DD80A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_CriandoVariaveis", "CSharp parte1 PrimeirosPassos\02_CriandoVariaveis\02_CriandoVariaveis.csproj", "{E7AAE61A-3F25-4B2C-A3BA-DDAD094DD80A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_CriandoVariaveisPontoFlutuante", "03_CriandoVariaveisPontoFlutuante\03_CriandoVariaveisPontoFlutuante.csproj", "{196CBFC7-6CDE-4AE6-A114-62EEAD6F69AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_CriandoVariaveisPontoFlutuante", "CSharp parte1 PrimeirosPassos\03_CriandoVariaveisPontoFlutuante\03_CriandoVariaveisPontoFlutuante.csproj", "{196CBFC7-6CDE-4AE6-A114-62EEAD6F69AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_ConversoesEOutrosTiposNumericos", "04_ConversoesEOutrosTiposNumericos\04_ConversoesEOutrosTiposNumericos.csproj", "{C7B862B2-EFD7-4BE5-9FE8-99E82E40982D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_ConversoesEOutrosTiposNumericos", "CSharp parte1 PrimeirosPassos\04_ConversoesEOutrosTiposNumericos\04_ConversoesEOutrosTiposNumericos.csproj", "{C7B862B2-EFD7-4BE5-9FE8-99E82E40982D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_CaracteresETextos", "05_CaracteresETextos\05_CaracteresETextos.csproj", "{4074882D-28C0-40AE-B1ED-6948862B898D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_CaracteresETextos", "CSharp parte1 PrimeirosPassos\05_CaracteresETextos\05_CaracteresETextos.csproj", "{4074882D-28C0-40AE-B1ED-6948862B898D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_AtribuicoesDeVariaveis", "06_AtribuicoesDeVariaveis\06_AtribuicoesDeVariaveis.csproj", "{E3C6BC53-5718-42CF-903E-091ECAAED608}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_AtribuicoesDeVariaveis", "CSharp parte1 PrimeirosPassos\06_AtribuicoesDeVariaveis\06_AtribuicoesDeVariaveis.csproj", "{E3C6BC53-5718-42CF-903E-091ECAAED608}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_Condicionais", "07_Condicionais\07_Condicionais.csproj", "{963A7F36-EE6D-45CD-8498-7B57829CEE62}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_Condicionais", "CSharp parte1 PrimeirosPassos\07_Condicionais\07_Condicionais.csproj", "{963A7F36-EE6D-45CD-8498-7B57829CEE62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_Condicionais2", "08_Condicionais2\08_Condicionais2.csproj", "{B7AE4A67-571C-4988-A35C-53A10E3CE13A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_Condicionais2", "CSharp parte1 PrimeirosPassos\08_Condicionais2\08_Condicionais2.csproj", "{B7AE4A67-571C-4988-A35C-53A10E3CE13A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_Escopo", "09_Escopo\09_Escopo.csproj", "{4EC407D9-F51E-4336-8D62-82795BF20A6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_Escopo", "CSharp parte1 PrimeirosPassos\09_Escopo\09_Escopo.csproj", "{4EC407D9-F51E-4336-8D62-82795BF20A6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_CalculaPoupanca", "10_CalculaPoupanca\10_CalculaPoupanca.csproj", "{724F3030-B429-4945-A2C5-BCC11BC8B7C8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_CalculaPoupanca", "CSharp parte1 PrimeirosPassos\10_CalculaPoupanca\10_CalculaPoupanca.csproj", "{724F3030-B429-4945-A2C5-BCC11BC8B7C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_CalculaPoupanca", "11_CalculaPoupanca\11_CalculaPoupanca.csproj", "{ADC2AE88-D9F9-4E49-9E94-7666E2C8726C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_CalculaPoupanca", "CSharp parte1 PrimeirosPassos\11_CalculaPoupanca\11_CalculaPoupanca.csproj", "{ADC2AE88-D9F9-4E49-9E94-7666E2C8726C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-CalculaInvestimentoLongoPrazo", "12-CalculaInvestimentoLongoPrazo\12-CalculaInvestimentoLongoPrazo.csproj", "{9235FEB7-25D6-431B-ABA5-260E737C0112}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-CalculaInvestimentoLongoPrazo", "CSharp parte1 PrimeirosPassos\12-CalculaInvestimentoLongoPrazo\12-CalculaInvestimentoLongoPrazo.csproj", "{9235FEB7-25D6-431B-ABA5-260E737C0112}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13_ForEncadeado", "13_ForEncadeado\13_ForEncadeado.csproj", "{18E78D40-C4C6-4795-A08B-194B58BF3830}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13_ForEncadeado", "CSharp parte1 PrimeirosPassos\13_ForEncadeado\13_ForEncadeado.csproj", "{18E78D40-C4C6-4795-A08B-194B58BF3830}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp parte1 Primeiros passos", "CSharp parte1 Primeiros passos", "{4629BA7A-0E17-427E-8EA5-B86169DAAC25}"
 EndProject
