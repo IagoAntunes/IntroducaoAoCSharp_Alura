@@ -69,6 +69,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBank.Modelos", "ByteBan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBank.SistemaInterno", "ByteBank.SistemaInterno\ByteBank.SistemaInterno.csproj", "{C23584A8-2A33-450A-8774-39E4012DB255}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp parte6 Strings,expressões regulares", "CSharp parte6 Strings,expressões regulares", "{517283AA-CD32-4189-9A6B-D220424A2F14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBank.SistemaAgencia2", "CSharp parte6 Strings,expressoes regulares\ByteBank.SistemaAgencia2\ByteBank.SistemaAgencia2.csproj", "{31319FA9-C682-49A1-AE1E-D0904EA75453}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -187,6 +191,10 @@ Global
 		{C23584A8-2A33-450A-8774-39E4012DB255}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C23584A8-2A33-450A-8774-39E4012DB255}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C23584A8-2A33-450A-8774-39E4012DB255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31319FA9-C682-49A1-AE1E-D0904EA75453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31319FA9-C682-49A1-AE1E-D0904EA75453}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31319FA9-C682-49A1-AE1E-D0904EA75453}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31319FA9-C682-49A1-AE1E-D0904EA75453}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -219,6 +227,7 @@ Global
 		{1C3F798B-A014-4C7A-B0B0-CDC1A23FC4ED} = {C1AAA55F-7016-4CCD-9B11-6698682078EA}
 		{EF4FC49C-1189-4ADD-9891-1565CBCE8F8F} = {2C7E8212-6CEC-42C2-9E07-323762CAB4C2}
 		{57E8DA29-F482-4DA0-9FDF-6E51D35E0153} = {2C7E8212-6CEC-42C2-9E07-323762CAB4C2}
+		{31319FA9-C682-49A1-AE1E-D0904EA75453} = {517283AA-CD32-4189-9A6B-D220424A2F14}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E0B0830-FC49-4C69-9CB5-F3EBE4E7E3CD}
