@@ -12,6 +12,8 @@ namespace ByteBank.SistemaAgencia
         static void Main(string[] args)
         {
             ContaCorrente conta = new ContaCorrente(847, 123456);
+
+            new ContaCorrente(123, 456987);
             Funcionario funcionario = null;
 
             Console.WriteLine(conta.Numero);
@@ -28,4 +30,13 @@ namespace ByteBank.SistemaAgencia
  * A diferença entre bibliotecas de classes e aplicativo de console
  * a extensao de arquivo .dll
  * como o .net busca as bibliotecas na execucao de um programa
+ */
+
+/*04
+ * Os comentarios de documentação ///
+ * O elemento de documentação <sumary/>
+ * O elemento <param/>
+ * O elemento <paramref/>
+ * O elemento <exception/>
+ * O elemento <see/>
  */

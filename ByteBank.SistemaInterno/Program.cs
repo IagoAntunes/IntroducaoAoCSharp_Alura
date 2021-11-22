@@ -12,6 +12,7 @@ namespace ByteBank.SistemaInterno
         static void Main(string[] args)
         {
             ContaCorrente conta = new ContaCorrente(456, 123321);
+
             Console.WriteLine(conta.saldo);
 
             Console.ReadLine();
