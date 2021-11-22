@@ -61,6 +61,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBankExcecao03", "ByteBa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBankExcecao04", "ByteBank04Excecao04\ByteBankExcecao04.csproj", "{1C3F798B-A014-4C7A-B0B0-CDC1A23FC4ED}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp parte5 Bibliotecas DLLss,documentacao", "CSharp parte5 Bibliotecas DLLss,documentacao", "{2C7E8212-6CEC-42C2-9E07-323762CAB4C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBank.SistemaAgencia", "ByteBank.SistemaAgencia\ByteBank.SistemaAgencia.csproj", "{EF4FC49C-1189-4ADD-9891-1565CBCE8F8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBank.Modelos", "ByteBank.Modelos\ByteBank.Modelos.csproj", "{57E8DA29-F482-4DA0-9FDF-6E51D35E0153}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -167,6 +173,14 @@ Global
 		{1C3F798B-A014-4C7A-B0B0-CDC1A23FC4ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C3F798B-A014-4C7A-B0B0-CDC1A23FC4ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C3F798B-A014-4C7A-B0B0-CDC1A23FC4ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF4FC49C-1189-4ADD-9891-1565CBCE8F8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF4FC49C-1189-4ADD-9891-1565CBCE8F8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF4FC49C-1189-4ADD-9891-1565CBCE8F8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF4FC49C-1189-4ADD-9891-1565CBCE8F8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57E8DA29-F482-4DA0-9FDF-6E51D35E0153}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57E8DA29-F482-4DA0-9FDF-6E51D35E0153}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57E8DA29-F482-4DA0-9FDF-6E51D35E0153}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57E8DA29-F482-4DA0-9FDF-6E51D35E0153}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -197,6 +211,7 @@ Global
 		{DE758224-54E0-4817-A3C7-D3C4D5720411} = {C1AAA55F-7016-4CCD-9B11-6698682078EA}
 		{7F93BD69-2503-4AAE-87DA-4C187BAE6812} = {C1AAA55F-7016-4CCD-9B11-6698682078EA}
 		{1C3F798B-A014-4C7A-B0B0-CDC1A23FC4ED} = {C1AAA55F-7016-4CCD-9B11-6698682078EA}
+		{EF4FC49C-1189-4ADD-9891-1565CBCE8F8F} = {2C7E8212-6CEC-42C2-9E07-323762CAB4C2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E0B0830-FC49-4C69-9CB5-F3EBE4E7E3CD}
