@@ -12,6 +12,71 @@ namespace ByteBank.SistemaAgencia2
         static void Main(string[] args)
         {
 
+            //Aluno 06
+            /*
+             * Cliente carlos_1 = new Cliente();
+             * carlos_1.Nome = "Carlos";
+             * carlos_1.CPF = "123.345.678-90";
+             * carlos_1.profissao = "Designer"
+             * 
+             * Cliente carlos_2 = new Cliente();
+             * carlos_2.Nome = "Carlos";
+             * carlos_2.CPF = "123.345.678-90";
+             * carlos_2.profissao = "Designer"
+             * 
+             * -Cliente
+             * public override bool Equals(object obj){
+             *  Cliente outroCliente = (Cliente)obj;
+             *  Cliente outroCliente = obj as Cliente;
+             *  
+             *  if(outroCliente ==null){
+             *      return false
+             *  }
+             *  
+             *  
+             *  return Nome == outroCliente.Nome 
+             *  && CPF == OutroCliente.CPF 
+             *  && outroCliente.profissao = profissao
+             * }
+
+
+
+
+
+
+
+
+
+
+
+            //Aula05
+            Console.WriteLine("Ola mundo!");
+            Console.WriteLine(15);
+            Console.WriteLine(10.5);
+            Console.WriteLine(true);
+          
+
+            //ContaCorrente conta = new ContaCorrente(456, 134552);
+            //Object conta = new ContaCorrente("23456");
+
+            //string contaToString = conta.ToString();
+
+            //Console.WriteLine("Resultado"+conta.toString());
+
+            /*
+             * public override String ToString(){
+             *      return $"Numero {Numero},Agencia {Agencia},Saldo {Saldo}";
+             *      return "Numero "+Numero+",Agencia"+Agencia+",Saldo"+Saldo;
+             *}
+             * 
+             * 
+             * 
+             */
+
+
+
+            Console.ReadLine();
+            //Aula 04
             //string padrao = "[0-9]{4,5}-{0,1}[0-9]{4}";
             string padrao = "[0-9]{4,5}-?[0-9]{4}";
             string pcpf = "[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}";
@@ -139,4 +204,10 @@ namespace ByteBank.SistemaAgencia2
  * Intervalos de caracteres como [0-9]
  * Quantificadores {4,5},{4} e {?}
  * O metodo estatico Regex.IsMatch e Regex.Match
+ */
+/*05
+ * Todos os tipos derivam de Object
+ * O metodo ToString
+ * Como usar interpolação de string
+ * Cast com a palavra reservada as 
  */
