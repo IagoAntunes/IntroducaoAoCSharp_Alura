@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace ByteBank.SistemaAgencia2
@@ -10,6 +11,26 @@ namespace ByteBank.SistemaAgencia2
     {
         static void Main(string[] args)
         {
+
+            //string padrao = "[0-9]{4,5}-{0,1}[0-9]{4}";
+            string padrao = "[0-9]{4,5}-?[0-9]{4}";
+            string pcpf = "[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}";
+
+            string textoDeTeste = "Meun ome é Guilherme , me liguem 947855657";
+            string cpf = "111.111.11110";
+
+            Regex.IsMatch(textoDeTeste,padrao);
+            Regex.Match(textoDeTeste, padrao);
+
+            Console.WriteLine(Regex.IsMatch(textoDeTeste, padrao));
+            Console.WriteLine(Regex.Match(textoDeTeste, padrao));
+            Console.WriteLine(Regex.Match(cpf, pcpf));
+
+            Console.ReadLine();
+
+
+
+            //Old
             string urlTeste = "https://www.bytebank.com/cambio";
             int indiceByteBank = urlTeste.IndexOf("https://www.bytebank.com");
             urlTeste.StartsWith("https://www.bytebank.com");
@@ -111,4 +132,11 @@ namespace ByteBank.SistemaAgencia2
  * O IndexOf retorna -1 quando o valor nao é encontrado
  * O método Replace
  * O método ToUpper e ToLower
- * O metodo StartsWith, EndsWith Contains*/
+ * O metodo StartsWith, EndsWith Contains
+ */
+/*04
+ * Grupos de caracteres como [0123456789]
+ * Intervalos de caracteres como [0-9]
+ * Quantificadores {4,5},{4} e {?}
+ * O metodo estatico Regex.IsMatch e Regex.Match
+ */
