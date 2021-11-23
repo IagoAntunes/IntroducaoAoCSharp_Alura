@@ -73,6 +73,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp parte6 Strings,expre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBank.SistemaAgencia2", "CSharp parte6 Strings,expressoes regulares\ByteBank.SistemaAgencia2\ByteBank.SistemaAgencia2.csproj", "{31319FA9-C682-49A1-AE1E-D0904EA75453}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp parte7 Array e tipos genericos", "CSharp parte7 Array e tipos genericos", "{5A3B3DF5-B17A-4B60-A19D-1F68E92FEF84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaAgencia03", "CSharp parte7 Array e tipos genericos\SistemaAgencia03\SistemaAgencia03.csproj", "{65D093EF-128F-4029-BBB2-73379509EFD7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +199,10 @@ Global
 		{31319FA9-C682-49A1-AE1E-D0904EA75453}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31319FA9-C682-49A1-AE1E-D0904EA75453}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31319FA9-C682-49A1-AE1E-D0904EA75453}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65D093EF-128F-4029-BBB2-73379509EFD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65D093EF-128F-4029-BBB2-73379509EFD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65D093EF-128F-4029-BBB2-73379509EFD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65D093EF-128F-4029-BBB2-73379509EFD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -228,6 +236,7 @@ Global
 		{EF4FC49C-1189-4ADD-9891-1565CBCE8F8F} = {2C7E8212-6CEC-42C2-9E07-323762CAB4C2}
 		{57E8DA29-F482-4DA0-9FDF-6E51D35E0153} = {2C7E8212-6CEC-42C2-9E07-323762CAB4C2}
 		{31319FA9-C682-49A1-AE1E-D0904EA75453} = {517283AA-CD32-4189-9A6B-D220424A2F14}
+		{65D093EF-128F-4029-BBB2-73379509EFD7} = {5A3B3DF5-B17A-4B60-A19D-1F68E92FEF84}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E0B0830-FC49-4C69-9CB5-F3EBE4E7E3CD}
