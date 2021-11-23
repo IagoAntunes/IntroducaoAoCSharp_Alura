@@ -44,7 +44,6 @@ namespace SistemaAgencia03
                 Console.WriteLine($"Conta {indice} {contas[indice].Numero}");
             }
         }
-
         static void TestaArrayInt()
         {
             int[] idades = new int[6];

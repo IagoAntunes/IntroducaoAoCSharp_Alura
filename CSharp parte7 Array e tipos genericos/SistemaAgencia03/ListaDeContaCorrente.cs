@@ -45,8 +45,6 @@ namespace SistemaAgencia03
                 novoArray[indice] = _itens[indice];
             }
             _itens = novoArray;
-
-
         }
     }
 }
