@@ -11,13 +11,39 @@ namespace SistemaAgencia03
     {
         static void Main(string[] args)
         {
-            
+            Lista<int> idades = new Lista<int>();
+
+            idades.Adicionar(5);
+            idades.AdicionaVarios(23, 19, 48);
 
 
 
-         
+
+
+            int idadeSoma = 0;
+
+            for(int i = 0; i < idades.Tamanho; i++)
+            {
+                int idadeAtual = idades[i];
+            }
 
             Console.ReadLine();
+        }
+        static void TestaListaDeObject()
+        {
+            ListaDeObject listaDeIdades = new ListaDeObject();
+
+            listaDeIdades.Adicionar(10);
+            listaDeIdades.Adicionar(5);
+            listaDeIdades.Adicionar(4);
+
+            listaDeIdades.AdicionaVarios(15, 19, 23);
+
+            for (int i = 0; i < listaDeIdades.Tamanho; i++)
+            {
+                int idade = (int)listaDeIdades[i];
+                Console.WriteLine($"Idade no indice {i}:{idade}");
+            }
         }
         static void TestaListaDeContaCorrente()
         {
@@ -129,3 +155,8 @@ namespace SistemaAgencia03
  * Como criar indexadores
  * Como criar um argumento params
  * O foreach*/
+/*05
+ * Oque sao classes genericas
+ * Como criar classes genericas
+ * null em tipos genericos
+ */
