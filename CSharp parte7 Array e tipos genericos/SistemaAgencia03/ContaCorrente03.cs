@@ -1,18 +1,24 @@
-﻿
-namespace ByteBankExcecoes
+﻿using ByteBank.Modelos;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SistemaAgencia03
 {
-    class ContaCorrente
+    public class ContaCorrente03
     {
         public static double TaxaOperacao { get; private set; }
 
         public Cliente titular { get; set; }
-        public static int TotalDeContasCriadas { get;private set; }//Faz parte da CLASSE
+        public static int TotalDeContasCriadas { get; private set; }//Faz parte da CLASSE
 
         public int agencia;
         public int Agencia
         {
             get { return agencia; }
-            set 
+            set
             {
                 if (value <= 0)
                 {
@@ -21,17 +27,17 @@ namespace ByteBankExcecoes
                 agencia = value;
             }
         }
-        
+
         public int numero { get; set; }
         public double saldo = 100;
 
         public double Saldo
         {
-            get 
-            { 
-                return saldo; 
+            get
+            {
+                return saldo;
             }
-            set 
+            set
             {
                 if (value < 0)
                 {
@@ -42,12 +48,12 @@ namespace ByteBankExcecoes
         }
 
 
-        public ContaCorrente(int agencia, int numero)//Construtor
+        public ContaCorrente03(int agencia, int numero)//Construtor
         {
             this.agencia = agencia;
             this.numero = numero;
 
-            TaxaOperacao = 30 / TotalDeContasCriadas;
+            //TaxaOperacao = 30 / TotalDeContasCriadas;
 
             TotalDeContasCriadas++;
         }
@@ -79,25 +85,17 @@ namespace ByteBankExcecoes
             contaDestino.Depositar(valor);
             return true;
         }
-        public void seila()
+
+        public override bool Equals(object obj)
         {
+            ContaCorrente outraConta = obj as ContaCorrente;
+
+            if (outraConta == null)
+            {
+                return false;
+            }
+            return numero == outraConta.Numero && agencia == outraConta.Agencia;
 
         }
-
     }
 }
-/*01
- * como definir metodos com parametros e retornos
- * como retornar algo usando a palavra chave return antes da expressao do resultado;
- * o uso do return para retornar antecipadamente a execução de um metodo
- * como usar a referencia this para acessar um atributo
- * qque podemos passar uma referencia como parametro do metodo
- * metodos soa chamadas a partir da referencia usando o operador
- */
-/*
- * 02
- * O bloco try pode acompanhar varios blocos catch
- * A CLR visita os blocos catch em ordem , de cima para baixo.Por esta razaão
- * os tipos de exceção mais especificos devem estar no começo
- * A instrução throw dentro de um bloc ocatch relança uma exceção
- * */

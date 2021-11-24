@@ -9,14 +9,14 @@ namespace SistemaAgencia03
 {
     public class ListaDeContaCorrente
     {
-        private ContaCorrente[] _itens;
+        private ContaCorrente03[] _itens;
         private int _proximaPosicao;
         public ListaDeContaCorrente(int capacidadeInicial=5)
         {
-            _itens = new ContaCorrente[capacidadeInicial];
+            _itens = new ContaCorrente03[capacidadeInicial];
             _proximaPosicao = 0;
         }
-        public void Adicionar(ContaCorrente item)
+        public void Adicionar(ContaCorrente03 item)
         {
             VerificaCapacidade(_proximaPosicao + 1);
 
@@ -25,6 +25,39 @@ namespace SistemaAgencia03
             _itens[_proximaPosicao] = item;
             _proximaPosicao++;
         }
+        public void Remover(ContaCorrente03 item)
+        {
+            int indiceItem = 0;
+            for(int i=0;i< _proximaPosicao; i++)
+            {
+                ContaCorrente03 itemAtual = _itens[i];
+
+                if (itemAtual.Equals(item))
+                {
+                    indiceItem = i;
+                    break;
+                }
+            }
+
+            for(int i = indiceItem; i < _proximaPosicao-1; i++)
+            {
+                _itens[i] = _itens[i + 1];
+            }
+            _proximaPosicao--;
+            _itens[_proximaPosicao] = null;
+
+        }
+
+        public void EscreverListaNaTela()
+        {
+            for(int i = 0; i < _proximaPosicao; i++)
+            {
+                ContaCorrente03 conta = _itens[i];
+                Console.WriteLine($"Numero:{conta.numero} Agencia:{conta.Agencia}");
+            }
+        }
+
+
         private void VerificaCapacidade(int tamanhoNecessario)
         {
             if(_itens.Length >= tamanhoNecessario) { 
@@ -38,7 +71,7 @@ namespace SistemaAgencia03
             }
 
             Console.WriteLine("Aumentando capacidade da lista");
-            ContaCorrente[] novoArray = new ContaCorrente[novoTamanho];
+            ContaCorrente03[] novoArray = new ContaCorrente03[novoTamanho];
 
             for(int indice = 0;indice < _itens.Length; indice++)
             {

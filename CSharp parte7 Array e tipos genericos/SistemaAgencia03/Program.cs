@@ -12,19 +12,25 @@ namespace SistemaAgencia03
         static void Main(string[] args)
         {
             ListaDeContaCorrente lista = new ListaDeContaCorrente();
+            ContaCorrente03 contaDoGui = new ContaCorrente03(546, 567908);
+            lista.Adicionar(contaDoGui);
 
-            lista.Adicionar(new ContaCorrente(874, 5679787));
-            lista.Adicionar(new ContaCorrente(874, 5679754));
-            lista.Adicionar(new ContaCorrente(874, 5679865));
-            lista.Adicionar(new ContaCorrente(874, 5679787));
-            lista.Adicionar(new ContaCorrente(874, 5679754));
-            lista.Adicionar(new ContaCorrente(874, 5679865));
-            lista.Adicionar(new ContaCorrente(874, 5679787));
-            lista.Adicionar(new ContaCorrente(874, 5679754));
-            lista.Adicionar(new ContaCorrente(874, 5679865));
+            lista.Adicionar(new ContaCorrente03(874, 5679787));
+            lista.Adicionar(new ContaCorrente03(874, 5679754));
+            lista.Adicionar(new ContaCorrente03(874, 5679865));
+            lista.Adicionar(new ContaCorrente03(874, 5679787));
+            lista.Adicionar(new ContaCorrente03(874, 5679754));
+            lista.Adicionar(new ContaCorrente03(874, 5679865));
+            lista.Adicionar(new ContaCorrente03(874, 5679787));
+            lista.Adicionar(new ContaCorrente03(874, 5679754));
+            lista.Adicionar(new ContaCorrente03(874, 5679865));
+            lista.EscreverListaNaTela();
 
 
+            lista.Remover(contaDoGui);
+            Console.WriteLine("Apos remover...");
 
+            lista.EscreverListaNaTela();
             Console.ReadLine();
         }
         static void TestaArrayDeContaCorrrente()
@@ -86,3 +92,8 @@ namespace SistemaAgencia03
  * Mais logica com arrays
  * Argumentos opcionais
  * Argumentos nomeados*/
+/*03
+ * Mais logica com arrays
+ * Como implementar o metodo Remover
+ * Como iterar por intervalos especificos de um array
+ */
