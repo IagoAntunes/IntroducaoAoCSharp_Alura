@@ -14,7 +14,8 @@ namespace SistemaAgencia03
         static void Main(string[] args)
         {
             Lista<int> idades = new Lista<int>();
-
+            Lista<string> IIdades = new Lista<string>();
+            IIdades.AdicionaVarios("Joao", "maria");
             ArrayList numeros = new ArrayList();
 
             idades.Adicionar(5);

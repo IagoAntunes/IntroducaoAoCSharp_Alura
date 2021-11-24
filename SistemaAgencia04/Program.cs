@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SistemaAgencia04.Extensoes;
 
 namespace SistemaAgencia04
 {
@@ -15,18 +16,14 @@ namespace SistemaAgencia04
             idades.Add(5);
             idades.Add(23);
 
-            int idadeSoma = 0;
 
-            //ListExtensoes.AdicionarVarios(idades, 1, 6, 23, 52, 13, 5);
+            idades.AdicionarVarios(23, 40, 52, 12);
+            
 
-            idades.AdicionarVarios( 123, 234);
-            idades.EscreverNaTela();
-            //ListExtensoes.AdicionarVarios(idades,123,234);
             for (int i = 0; i < idades.Count; i++)
             {
-                //Console.WriteLine($"Idade Atual:{idades[i]}");
+                Console.WriteLine($"Idade Atual:{idades[i]}");
             }
-            1.EscreverNaTela();
 
             Console.ReadLine();
         }
@@ -41,4 +38,9 @@ namespace SistemaAgencia04
 /*01
  * O tipo List<T> do .NEet
  * Como criar metodos da Extensao
+ */
+/*02
+ * Como criar metodos genericos
+ * como criar metodos de extensao genericos
+ * como o compilar encontra os metodos de xtensao
  */
