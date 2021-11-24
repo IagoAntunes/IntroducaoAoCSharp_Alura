@@ -11,6 +11,12 @@ namespace SistemaAgencia03
     {
         private ContaCorrente03[] _itens;
         private int _proximaPosicao;
+        public int Tamanho {
+            get 
+            {
+                return _proximaPosicao;
+            }
+        }
         public ListaDeContaCorrente(int capacidadeInicial=5)
         {
             _itens = new ContaCorrente03[capacidadeInicial];
@@ -20,11 +26,19 @@ namespace SistemaAgencia03
         {
             VerificaCapacidade(_proximaPosicao + 1);
 
-            Console.WriteLine($"Adicionando item na posicao {_proximaPosicao}");
+            //Console.WriteLine($"Adicionando item na posicao {_proximaPosicao}");
 
             _itens[_proximaPosicao] = item;
             _proximaPosicao++;
         }
+
+        public void AdicionaVarios(params ContaCorrente03[] itens)
+        {
+            foreach(ContaCorrente03 conta in itens){
+                Adicionar(conta);
+            }
+        }
+
         public void Remover(ContaCorrente03 item)
         {
             int indiceItem = 0;
@@ -56,7 +70,14 @@ namespace SistemaAgencia03
                 Console.WriteLine($"Numero:{conta.numero} Agencia:{conta.Agencia}");
             }
         }
-
+        public ContaCorrente03 GetContaCorrenteNoIndice(int indice)
+        {
+            if(indice < 0 || indice >= _proximaPosicao)
+            {
+                throw new ArgumentOutOfRangeException(nameof(indice));
+            }
+            return _itens[indice];
+        }
 
         private void VerificaCapacidade(int tamanhoNecessario)
         {
@@ -70,7 +91,7 @@ namespace SistemaAgencia03
                 novoTamanho = tamanhoNecessario;
             }
 
-            Console.WriteLine("Aumentando capacidade da lista");
+            //Console.WriteLine("Aumentando capacidade da lista");
             ContaCorrente03[] novoArray = new ContaCorrente03[novoTamanho];
 
             for(int indice = 0;indice < _itens.Length; indice++)
@@ -78,6 +99,14 @@ namespace SistemaAgencia03
                 novoArray[indice] = _itens[indice];
             }
             _itens = novoArray;
+        }
+
+        public ContaCorrente03 this[int indice]
+        {
+            get
+            {
+                return GetContaCorrenteNoIndice(indice);
+            }
         }
     }
 }

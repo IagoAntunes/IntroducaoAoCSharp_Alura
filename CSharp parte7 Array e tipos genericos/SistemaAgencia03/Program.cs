@@ -11,28 +11,56 @@ namespace SistemaAgencia03
     {
         static void Main(string[] args)
         {
-            ListaDeContaCorrente lista = new ListaDeContaCorrente();
-            ContaCorrente03 contaDoGui = new ContaCorrente03(546, 567908);
-            lista.Adicionar(contaDoGui);
-
-            lista.Adicionar(new ContaCorrente03(874, 5679787));
-            lista.Adicionar(new ContaCorrente03(874, 5679754));
-            lista.Adicionar(new ContaCorrente03(874, 5679865));
-            lista.Adicionar(new ContaCorrente03(874, 5679787));
-            lista.Adicionar(new ContaCorrente03(874, 5679754));
-            lista.Adicionar(new ContaCorrente03(874, 5679865));
-            lista.Adicionar(new ContaCorrente03(874, 5679787));
-            lista.Adicionar(new ContaCorrente03(874, 5679754));
-            lista.Adicionar(new ContaCorrente03(874, 5679865));
-            lista.EscreverListaNaTela();
+            
 
 
-            lista.Remover(contaDoGui);
-            Console.WriteLine("Apos remover...");
 
-            lista.EscreverListaNaTela();
+         
+
             Console.ReadLine();
         }
+        static void TestaListaDeContaCorrente()
+        {
+            ListaDeContaCorrente lista = new ListaDeContaCorrente();
+            ContaCorrente03 contaDoGui = new ContaCorrente03(546, 567908);
+
+            lista.Adicionar(contaDoGui);
+            lista.Adicionar(new ContaCorrente03(874, 5679787));
+            lista.Adicionar(new ContaCorrente03(874, 5679754));
+
+            ContaCorrente03[] contas = new ContaCorrente03[]
+            {
+                contaDoGui,
+                new ContaCorrente03(874, 5679787),
+                new ContaCorrente03(874, 5679754)
+            };
+
+            lista.AdicionaVarios(contas);
+
+            lista.AdicionaVarios(
+                contaDoGui,
+                new ContaCorrente03(874, 5679787),
+                new ContaCorrente03(874, 5679754)
+            );
+
+
+            for (int i = 0; i < lista.Tamanho; i++)
+            {
+                ContaCorrente03 itemAtual = lista[i];
+                Console.WriteLine($"Item na posicao {i} = {itemAtual.numero}");
+            }
+            lista.Remover(contaDoGui);
+        }
+        static int SomarVarios(params int[] numeros)
+        {
+            int acumulador = 0;
+            foreach(int numero in numeros)
+            {
+                acumulador += numero;
+            }
+            return acumulador;
+        }
+
         static void TestaArrayDeContaCorrrente()
         {
             ContaCorrente[] contas = new ContaCorrente[]
@@ -97,3 +125,7 @@ namespace SistemaAgencia03
  * Como implementar o metodo Remover
  * Como iterar por intervalos especificos de um array
  */
+/*04
+ * Como criar indexadores
+ * Como criar um argumento params
+ * O foreach*/
