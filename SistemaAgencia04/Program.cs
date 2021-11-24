@@ -17,16 +17,34 @@ namespace SistemaAgencia04
             {
                 new ContaCorrente(123,127553),
                 new ContaCorrente(345,798435),
+                null,
                 new ContaCorrente(164,224223),
+                null,
+                null,
                 new ContaCorrente(986,683465)
             };
             //contas.Sort(); --> chama a Implementacao IComparable
+            //contas.Sort(new ComparadorContaCorrentePorAgencia());
 
-            contas.Sort(new ComparadorContaCorrentePorAgencia());
+            IOrderedEnumerable<ContaCorrente> listaOrdenada = 
+                contas.OrderBy(conta => {
+                    if(conta == null)
+                    {
+                        return int.MinValue;
+                    }
+                    return conta.Numero; 
+                });
 
-            foreach (var conta in contas)
+            foreach (var conta in listaOrdenada)
             {
-                Console.WriteLine($"Conta numero {conta.Numero},ag:{conta.Agencia}");
+                if (conta == null)
+                {
+                    Console.WriteLine("Conta nula");
+                }
+                else
+                {
+                    Console.WriteLine($"Conta numero {conta.Numero},ag:{conta.Agencia}");
+                }
             }
             Console.ReadLine();
         }
@@ -88,4 +106,7 @@ namespace SistemaAgencia04
  * Como usar a interface IComparable
  * Como usar a interface IComparer<T>
  * A sobrecarga List<T>::Sort(IComparer<T>);
+ *///METODO SORT QUANDO NAO PASSAR ARGUMENTO USA O ICOMPARABLE
+/*05 Expressoes lambdas
+ * O metodo OrderBy
  */
