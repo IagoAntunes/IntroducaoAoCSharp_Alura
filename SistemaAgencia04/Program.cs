@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ByteBank.Modelos;
+using SistemaAgencia04.Comparadores;
 using SistemaAgencia04.Extensoes;
 
 namespace SistemaAgencia04
@@ -14,21 +15,19 @@ namespace SistemaAgencia04
         {
             var contas = new List<ContaCorrente>()
             {
-                new ContaCorrente(123,456789),
-                new ContaCorrente(345,456789),
-                new ContaCorrente(164,456789),
-                new ContaCorrente(986,456789)
+                new ContaCorrente(123,127553),
+                new ContaCorrente(345,798435),
+                new ContaCorrente(164,224223),
+                new ContaCorrente(986,683465)
             };
-            contas.Sort();
+            //contas.Sort(); --> chama a Implementacao IComparable
+
+            contas.Sort(new ComparadorContaCorrentePorAgencia());
 
             foreach (var conta in contas)
             {
                 Console.WriteLine($"Conta numero {conta.Numero},ag:{conta.Agencia}");
             }
-
-
-    
-
             Console.ReadLine();
         }
         static void TestaSorte()
@@ -85,3 +84,8 @@ namespace SistemaAgencia04
  * A interferencia de variaveis locais com o var
  * Sintaxe de inicialização de listas
  * O metodo Sort*/
+/*04
+ * Como usar a interface IComparable
+ * Como usar a interface IComparer<T>
+ * A sobrecarga List<T>::Sort(IComparer<T>);
+ */
