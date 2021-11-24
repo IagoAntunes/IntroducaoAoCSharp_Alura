@@ -62,14 +62,6 @@ namespace SistemaAgencia03
 
         }
 
-        public void EscreverListaNaTela()
-        {
-            for(int i = 0; i < _proximaPosicao; i++)
-            {
-                ContaCorrente03 conta = _itens[i];
-                Console.WriteLine($"Numero:{conta.numero} Agencia:{conta.Agencia}");
-            }
-        }
         public ContaCorrente03 GetContaCorrenteNoIndice(int indice)
         {
             if(indice < 0 || indice >= _proximaPosicao)

@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
+
 
 namespace SistemaAgencia03
 {
@@ -13,18 +15,18 @@ namespace SistemaAgencia03
         {
             Lista<int> idades = new Lista<int>();
 
+            ArrayList numeros = new ArrayList();
+
             idades.Adicionar(5);
             idades.AdicionaVarios(23, 19, 48);
 
-
-
-
-
+            
             int idadeSoma = 0;
 
             for(int i = 0; i < idades.Tamanho; i++)
             {
-                int idadeAtual = idades[i];
+                int idadeAtual = idades.GetContaCorrenteNoIndice(i);
+                Console.WriteLine($"Idade Atual:{idadeAtual}");
             }
 
             Console.ReadLine();

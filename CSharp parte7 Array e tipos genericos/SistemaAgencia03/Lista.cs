@@ -85,7 +85,7 @@ namespace SistemaAgencia03
             }
 
             //Console.WriteLine("Aumentando capacidade da lista");
-            T[] novoArray = new object[novoTamanho];
+            T[] novoArray = new T[novoTamanho];
 
             for (int indice = 0; indice < _itens.Length; indice++)
             {
