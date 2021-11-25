@@ -12,24 +12,13 @@ namespace ByteBankImportacaoExportacao
     {
         static void Main(string[] args)
         {
-            var enderecoDoArquivo = "contas.txt";
+            CriarArquivoComWriter();
+            Console.WriteLine("Aplicacao finalizada");
 
-            using(var fluxoDeArquivo = new FileStream(enderecoDoArquivo, FileMode.Open))
-            {
-                using (var leitor = new StreamReader(fluxoDeArquivo))
-                {
-                    while (!leitor.EndOfStream)//Enquanto nao chegou ao FIM
-                    {
-                        var linha = leitor.ReadLine();
-                        Console.WriteLine(linha);
-                    }
-                }
 
-            }
-
-            
             Console.ReadLine();
         }
+        
         
     }
 }
@@ -45,3 +34,10 @@ namespace ByteBankImportacaoExportacao
  * Como usar o StreamReader
  * Os metodos Read,ReadLine e ReadToEnd
  * A propriedade EndOfStream*/
+/*03
+ * Os metodos int.Parse e double.Parse
+ * O formato de arquivo .csv
+ * Como escrever diretamente no stream
+ * Diferença entre FileMode.Create e FileMode.CreateNew;
+ * Como usar o StreamWriter
+ */
