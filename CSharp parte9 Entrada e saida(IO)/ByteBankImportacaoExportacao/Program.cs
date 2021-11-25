@@ -12,17 +12,35 @@ namespace ByteBankImportacaoExportacao
     {
         static void Main(string[] args)
         {
-
-            EscritaBinaria();
-
-            LeituraBinaria();
+            File.WriteAllText("escrevendoComAClasseFile.txt","Testando file");
+            Console.WriteLine($"Arquivo criado");
 
 
+            var bytesArquivo = File.ReadAllBytes("contas.txt");
+            Console.WriteLine(bytesArquivo.Length);
 
+
+            var linhas = File.ReadAllLines("contas.txt");
+            Console.WriteLine(linhas.Length);
+
+            foreach(var linha in linhas)
+            {
+                Console.WriteLine(linha);
+            }
+
+
+            Console.ReadLine();
+
+            var nome = Console.ReadLine();
+
+            Console.WriteLine(nome);
+
+
+            //UsarStreamDeEntrada();
 
 
             //CriarArquivoComWriter();
-            TestaEscrita();
+            //TestaEscrita();
             Console.WriteLine("Aplicacao finalizada");
 
 
@@ -54,3 +72,7 @@ namespace ByteBankImportacaoExportacao
 /*04 
  * O metodo Flush
  * BinaryReader e BinaryWriter*/
+/*05
+ * Como a Console funciona com streams
+ * O metodo Console.OpenStandardInput()
+ * Metodos auxiliares na classe File*/
