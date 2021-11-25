@@ -12,7 +12,17 @@ namespace ByteBankImportacaoExportacao
     {
         static void Main(string[] args)
         {
-            CriarArquivoComWriter();
+
+            EscritaBinaria();
+
+            LeituraBinaria();
+
+
+
+
+
+            //CriarArquivoComWriter();
+            TestaEscrita();
             Console.WriteLine("Aplicacao finalizada");
 
 
@@ -41,3 +51,6 @@ namespace ByteBankImportacaoExportacao
  * Diferença entre FileMode.Create e FileMode.CreateNew;
  * Como usar o StreamWriter
  */
+/*04 
+ * O metodo Flush
+ * BinaryReader e BinaryWriter*/
