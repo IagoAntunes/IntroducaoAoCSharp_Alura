@@ -81,6 +81,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp parte8 List,lambda,l
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaAgencia04", "SistemaAgencia04\SistemaAgencia04.csproj", "{A49D167E-7D4D-4A66-B1FD-F3476D969194}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp parte 9 Entrada e saida(IO)", "CSharp parte 9 Entrada e saida(IO)", "{A119592E-89B6-437F-97B6-2DE26D59151D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBankImportacaoExportacao", "CSharp parte9 Entrada e saida(IO)\ByteBankImportacaoExportacao\ByteBankImportacaoExportacao.csproj", "{9C1F3E1E-BD28-45D5-95F0-70EDFE2C8821}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -211,6 +215,10 @@ Global
 		{A49D167E-7D4D-4A66-B1FD-F3476D969194}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A49D167E-7D4D-4A66-B1FD-F3476D969194}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A49D167E-7D4D-4A66-B1FD-F3476D969194}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C1F3E1E-BD28-45D5-95F0-70EDFE2C8821}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C1F3E1E-BD28-45D5-95F0-70EDFE2C8821}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C1F3E1E-BD28-45D5-95F0-70EDFE2C8821}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C1F3E1E-BD28-45D5-95F0-70EDFE2C8821}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -246,6 +254,7 @@ Global
 		{31319FA9-C682-49A1-AE1E-D0904EA75453} = {517283AA-CD32-4189-9A6B-D220424A2F14}
 		{65D093EF-128F-4029-BBB2-73379509EFD7} = {5A3B3DF5-B17A-4B60-A19D-1F68E92FEF84}
 		{A49D167E-7D4D-4A66-B1FD-F3476D969194} = {71CA3246-31CC-4E15-9F87-8A9AB889AF46}
+		{9C1F3E1E-BD28-45D5-95F0-70EDFE2C8821} = {A119592E-89B6-437F-97B6-2DE26D59151D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E0B0830-FC49-4C69-9CB5-F3EBE4E7E3CD}
