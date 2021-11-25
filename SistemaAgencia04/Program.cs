@@ -25,26 +25,29 @@ namespace SistemaAgencia04
             };
             //contas.Sort(); --> chama a Implementacao IComparable
             //contas.Sort(new ComparadorContaCorrentePorAgencia());
+            /*
+            var listaSemNulos = new List<ContaCorrente>();
 
+            foreach (var conta in contas)
+            {
+                if(conta != null)
+                {
+                    listaSemNulos.Add(conta);
+                }
+            }*/
+            //Onde a conta e diferente de nulo
+            IEnumerable<ContaCorrente> contasNaoNulas = contas.Where(conta => conta != null);
             IOrderedEnumerable<ContaCorrente> listaOrdenada = 
-                contas.OrderBy(conta => {
-                    if(conta == null)
-                    {
-                        return int.MinValue;
-                    }
-                    return conta.Numero; 
-                });
+                contasNaoNulas.OrderBy<ContaCorrente,int >(conta =>{return conta.Numero;});
+
+            var contasOrdenadas = contas
+               .Where(conta => conta != null)
+               .OrderBy(conta => conta.Numero);
+
 
             foreach (var conta in listaOrdenada)
             {
-                if (conta == null)
-                {
-                    Console.WriteLine("Conta nula");
-                }
-                else
-                {
-                    Console.WriteLine($"Conta numero {conta.Numero},ag:{conta.Agencia}");
-                }
+                Console.WriteLine($"Conta numero {conta.Numero},ag:{conta.Agencia}");
             }
             Console.ReadLine();
         }
@@ -110,3 +113,7 @@ namespace SistemaAgencia04
 /*05 Expressoes lambdas
  * O metodo OrderBy
  */
+/*06 O metodo wherre
+ * A interface IEnumerable<T> 
+ * Os metodos de extensao da classe Enumerable
+ * Introducao ao Linq/*
