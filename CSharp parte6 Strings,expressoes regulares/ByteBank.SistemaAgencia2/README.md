@@ -27,6 +27,7 @@
  - Intervalos de caracteres como [0-9]
  - Quantificadores {4,5},{4} e {?}
  - O metodo estatico Regex.IsMatch e Regex.Match
+ 
 05
  - Todos os tipos derivam de Object
  - O metodo ToString
