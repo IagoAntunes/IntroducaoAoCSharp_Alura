@@ -10,7 +10,9 @@
 - A palavra reservada int é , na verdade o tipo int32
 - A palavra reservada double é na verdade o tipo Double
 - A sobrecarga String::IndexOf(string)
-- A propriedade String::Length*/
+- A propriedade String::Length
+
+03
 - O IndexOf retorna sempre o indice da primeira ocorrencia que buscamos
 - O metodo Remove(char)
 - O metodo Remove(char,int)
@@ -19,13 +21,13 @@
 - O método Replace
 - O método ToUpper e ToLower
 - O metodo StartsWith, EndsWith Contains
-- 
+
 04
  - Grupos de caracteres como [0123456789]
  - Intervalos de caracteres como [0-9]
  - Quantificadores {4,5},{4} e {?}
  - O metodo estatico Regex.IsMatch e Regex.Match
- - 
+05
  - Todos os tipos derivam de Object
  - O metodo ToString
  - Como usar interpolação de string
